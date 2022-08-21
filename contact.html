@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cognitive Core - Contact</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon_logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--Styling starts here-->
+    <style>
+        .edit_label {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        footer section {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer img {
+            margin: 0 15px;
+        }
+    </style>
+
+    <script>
+        function disp() {
+            alert("This feature is currently unavailable!!");
+        }
+
+        function confirmation() {
+            document.getElementById("success_message").innerHTML = "SUBMITTED SUCCESSFULLY!!";
+            document.getElementById("success_message").style.fontSize = "30px";
+            document.getElementById("success_message").style.color = "green";
+            document.getElementById("success_message").style.textAlign = "center";
+            document.getElementById("success_message").style.fontWeight = "bold";
+        }
+    </script>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"><img src="/images/site_logo.jpg" height="95px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/gis.html">GIS</a></li>
+                            <li><a class="dropdown-item" href="/tech.html">Technology</a></li>
+                            <li><a class="dropdown-item" href="/mystery.html">Mystery</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li onclick="disp()"><a class="dropdown-item">Write a blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contact.html">Contact</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Navigation Bar Ends Here-->
+    <br>
+    <header style="text-align:center; font-size:300%; font-family:Georgia, 'Times New Roman', Times, serif;">
+        CONTACT US
+    </header>
+
+    <br><br>
+    <p id="success_message"></p>
+
+    <div class="container col-sm-4 border border-info border-2 rounded">
+        <br>
+        <p class="edit_label">Name:</p>
+        <div class="row g-3">
+            <div class="col-lg-6">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col-lg-6">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+        </div>
+        <br>
+        <p class="edit_label">Email:</p>
+        <form>
+            <div class="row mb-3">
+                <div class="col-sm-12">
+                    <input type="email" class="form-control" id="inputEmail3">
+                </div>
+            </div>
+        </form>
+        <br>
+        <p class="edit_label">Rate my Site:</p>
+        <input type="range" class="form-range" min="1" max="5" step="1.0" id="customRange3">
+        <div class="container">
+            <div class="row">
+                <div class="col text-start">
+                    1⭐
+                </div>
+                <div class="col text-end">
+                    5⭐
+                </div>
+            </div>
+        </div>
+        <br>
+        <p class="edit_label">Grievance/Suggestions:</p>
+        <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary" onclick="confirmation()">Submit</button>
+        </div>
+        <br>
+    </div>
+
+    <!--FOOTER BEGINS HERE-->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="/about.html" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item"><a href="/contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+            </ul>
+            <section>
+                <a href="mailto:yashmasteruniversal@gmail.com" target="_blank"><img src="images/gmail_icon_black.png"
+                    alt="Send email"></a>
+                <a href="https://www.youtube.com/channel/UCXtOvNWUttEBIbbnPhjN9-w" target="_blank"><img
+                    src="images/youtube_icon_black.png"></a>
+                <a href="https://www.linkedin.com/in/yash-shah-00816523b/" target="_blank"><img
+                    src="images/linkedin_icon_black.png"></a>
+                <a href="https://github.com/YashShah06112002" target="_blank"><img src="images/github_icon_black.png"></a>
+              </section>
+              <br>
+            <p class="text-center text-muted">© 2022 Yash Shah, India</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cognitive Core - Mystery</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon_logo.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!--Styling starts here-->
+  <style>
+    /*
+    body{
+        background-color: rgb(236, 236, 236);
+    }
+    */
+
+    body {
+      background-image: linear-gradient(180deg, white, rgb(181, 181, 181));
+    }
+
+    .correct_image {
+      height: 426px;
+    }
+
+    .blog_image {
+      margin-top: 10px;
+      width: 90%;
+      height: auto;
+      align-self: center;
+    }
+
+    footer section {
+      display: flex;
+      justify-content: center;
+    }
+
+    footer img {
+      margin: 0 15px;
+    }
+  </style>
+
+  <script>
+    function disp() {
+      alert("This feature is currently unavailable!!");
+    }
+  </script>
+</head>
+
+<body>
+  <!--Navigation Bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html"><img src="/images/site_logo.jpg" height="95px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/gis.html">GIS</a></li>
+              <li><a class="dropdown-item" href="/tech.html">Technology</a></li>
+              <li><a class="dropdown-item active" href="/mystery.html">Mystery</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li onclick="disp()"><a class="dropdown-item">Write a blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Navigation Bar Ends Here-->
+  <br>
+  <header style="text-align:center; font-size:300%; font-family:Georgia, 'Times New Roman', Times, serif;">
+    MYSTERY
+  </header>
+  <br><br>
+  <!--BLOG LIST BEGINS HERE-->
+  <!--All the images used in this section are of 590px x 322px size-->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+      <div class="col">
+        <div class="card h-100 border border-secondary border-4">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Haunted_fort_of_Bhangarh.jpg/2560px-Haunted_fort_of_Bhangarh.jpg"
+            class="card-img-top blog_image" alt="Bhangarh Fort">
+          <div class="card-body">
+            <h5 class="card-title">What Makes Bhangarh Fort, the Most Haunted Place of India?<h6><span
+                  class="badge bg-danger">New</span></h6>
+              <p class="card-text">With an aura that seem to have stepped out of a horror story,
+                Bhangarh Fort has been a topic of hot discussion since times long forgotten. Many people
+                call it dangerous while many others say .... </p>
+          </div>
+          <a href="/sample_blog.html" target="_self" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border border-secondary border-4">
+          <img src="https://cdn.mos.cms.futurecdn.net/WYDkHu965GMPJdvKZV8gmD.jpg" class="card-img-top blog_image"
+            alt="DB Cooper">
+          <div class="card-body">
+            <h5 class="card-title">Who and where is DB Cooper? The Unsolved Mystery of November 1971</h5>
+            <p class="card-text">
+              Dan Cooper was a passenger on Northwest Airlines Flight 305, from Portland to Seattle—a 30-minute flight.
+              He was described by passengers and flight attendants as a man in his mid-40s, wearing a dark suit, black
+              tie with a ....
+            </p>
+          </div>
+          <a href="/sample_blog.html" target="_self" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border border-secondary border-4">
+          <img src="https://i.pinimg.com/originals/e9/b7/0e/e9b70e2bcd4a7a083a3612786b0c22d8.jpg"
+            class="card-img-top blog_image" alt="Area 51">
+          <div class="card-body">
+            <h5 class="card-title">Everything to Know About Area 51's Mysterious History</h5>
+            <p class="card-text">
+              Area 51 has been shrouded in mystery for decades, so it only makes sense that the rumored alien secrets
+              held within the remote desert site would get a reboot in the social media age. The event, called “Storm
+              Area 51, They Can’t ....
+            </p>
+          </div>
+          <a href="/sample_blog.html" target="_self" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--All the images used in this section are of 590px x 322px size-->
+  <div class="container my-4">
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+      <div class="col">
+        <div class="card h-100 border border-secondary border-4">
+          <img src="https://anomalien.com/wp-content/uploads/2018/12/changeling.jpeg" class="card-img-top blog_image"
+            alt="Walter Collins">
+          <div class="card-body">
+            <h5 class="card-title">What really happened to young Walter Collins?</h6>
+            </h5>
+            <p class="card-text">
+              In 2008, Clint Eastwood’s film Changeling re-awakened interest in one of the most bizarre and tragic crime
+              stories of the 1920s. Single mom Christine Collins reported her nine-year-old son, Walter, missing in
+              March 1928 from their ....
+          </div>
+          <a href="/sample_blog.html" target="_self" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 border border-secondary border-4">
+          <img src="https://c4.wallpaperflare.com/wallpaper/106/336/857/girl-pier-artwork-art-wallpaper-preview.jpg"
+            class="card-img-top blog_image" alt="Paula Jean Welden">
+          <div class="card-body">
+            <h5 class="card-title">The Disappearance of Paula Jean Welden</h5>
+            <p class="card-text">
+              Paula Jean Welden, 18, was a sophomore at Bennington College on December 1, 1946, the day she told her
+              roommate, Elizabeth Parker, she was going for a long walk but failed to return. A search focused primarily
+              on Vermont’s Long Trail where ....
+            </p>
+          </div>
+          <a href="/sample_blog.html" target="_self" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border border-secondary border-4">
+          <img
+            src="https://assets1.cbsnewsstatic.com/hub/i/2018/05/15/7b8dfbed-b4ed-4f01-aef6-ecdb83f623c6/cbsn-fusion-mh370-crash-intentional-flight-new-report-thumbnail-1568617-640x360.jpg"
+            class="card-img-top blog_image" alt="Flight MH370">
+          <div class="card-body">
+            <h5 class="card-title">The disappearance of Malaysian Airlines Flight 370</h5>
+            <p class="card-text">
+              On March 8, 2014, while flying from Malaysia to China, a Boeing 777 carrying 239 passengers and crew
+              members seems to have vanished into thin air. The multinational search effort, the largest in aviation
+              history, has turned up a mere ....
+            </p>
+          </div>
+          <a href="/sample_blog.html" target="_self" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--FOOTER BEGINS HERE-->
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="/about.html" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="/contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+      </ul>
+      <section>
+        <a href="mailto:yashmasteruniversal@gmail.com" target="_blank"><img src="images/gmail_icon_black.png"
+            alt="Send email"></a>
+        <a href="https://www.youtube.com/channel/UCXtOvNWUttEBIbbnPhjN9-w" target="_blank"><img
+            src="images/youtube_icon_black.png"></a>
+        <a href="https://www.linkedin.com/in/yash-shah-00816523b/" target="_blank"><img
+            src="images/linkedin_icon_black.png"></a>
+        <a href="https://github.com/YashShah06112002" target="_blank"><img src="images/github_icon_black.png"></a>
+      </section>
+      <br>
+      <p class="text-center text-muted">© 2022 Yash Shah, India</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

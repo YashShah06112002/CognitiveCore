@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cognitive Core - About</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon_logo.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!--Styling starts here-->
+  <style>
+    .centered_text {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: larger;
+      color: white;
+      text-align: center;
+      background-color: purple;
+    }
+
+    .about_page_pic {
+      width: 80%;
+      max-height: 90%;
+    }
+
+    footer section {
+      display: flex;
+      justify-content: center;
+    }
+
+    footer img {
+      margin: 0 15px;
+    }
+  </style>
+
+  <script>
+    function disp() {
+      alert("This feature is currently unavailable!!");
+    }
+  </script>
+</head>
+
+<body>
+  <!--Navigation Bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html"><img src="/images/site_logo.jpg" height="95px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/gis.html">GIS</a></li>
+              <li><a class="dropdown-item" href="/tech.html">Technology</a></li>
+              <li><a class="dropdown-item" href="/mystery.html">Mystery</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li onclick="disp()"><a class="dropdown-item">Write a blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Navigation Bar Ends Here-->
+  <br>
+  <header style="text-align:center; font-size:300%; font-family:Georgia, 'Times New Roman', Times, serif;">
+    ABOUT
+  </header>
+
+  <br><br>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-5">
+        <img src="/images/sharp_logo.jpg" class="about_page_pic">
+      </div>
+      <div class="col-sm centered_text">
+        <p style="margin-top:20px;">Welcome to <b><i>Cognitive Core - A Hub for Philomath</i></b></p>
+        <p style="width:80%; margin:60px auto">Ever wondered what makes a blog so special?? A good speech starts
+          with an even better script. The more you learn about topics of interest, the easier it gets to communicate
+          them
+          verbally. Cognitive Core brings to you the most intellectual information provided by some remarkable bloggers
+          who are ready to blow-up your mind every weekend by coming up with the most astonishing topics. All you need
+          to do is invest your time, and get the latest information in areas like Geographic Information System(GIS),
+          Technology and Mystery and many more as a yield. Fire up your cognition as we are here to serve you and lead
+          you to attain
+          ultimate excellence.</p>
+        <p><b>*This site is still under development* </b></p>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <!--FOOTER BEGINS HERE-->
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="/about.html" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="/contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+      </ul>
+      <section>
+        <a href="mailto:yashmasteruniversal@gmail.com" target="_blank"><img src="images/gmail_icon_black.png"
+            alt="Send email"></a>
+        <a href="https://www.youtube.com/channel/UCXtOvNWUttEBIbbnPhjN9-w" target="_blank"><img
+            src="images/youtube_icon_black.png"></a>
+        <a href="https://www.linkedin.com/in/yash-shah-00816523b/" target="_blank"><img
+            src="images/linkedin_icon_black.png"></a>
+        <a href="https://github.com/YashShah06112002" target="_blank"><img src="images/github_icon_black.png"></a>
+      </section>
+      <br>
+      <p class="text-center text-muted">© 2022 Yash Shah, India</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

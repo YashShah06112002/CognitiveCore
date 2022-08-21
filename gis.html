@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cognitive Core - GIS</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon_logo.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!--Styling starts here-->
+  <style>
+    /*
+    body{
+        background-color: rgb(252, 252, 202);
+    }
+    */
+    body {
+      background-image: linear-gradient(180deg, white, rgb(252, 252, 202));
+    }
+
+    .correct_image {
+      height: 426px;
+    }
+
+    .blog_image {
+      margin-top: 10px;
+      width: 90%;
+      height: auto;
+      align-self: center;
+    }
+
+    footer section {
+      display: flex;
+      justify-content: center;
+    }
+
+    footer img {
+      margin: 0 15px;
+    }
+  </style>
+
+  <script>
+    function disp() {
+      alert("This feature is currently unavailable!!");
+    }
+  </script>
+</head>
+
+<body>
+  <!--Navigation Bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html"><img src="/images/site_logo.jpg" height="95px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="/gis.html">GIS</a></li>
+              <li><a class="dropdown-item" href="/tech.html">Technology</a></li>
+              <li><a class="dropdown-item" href="/mystery.html">Mystery</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li onclick="disp()"><a class="dropdown-item">Write a blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Navigation Bar Ends Here-->
+  <br>
+  <header style="text-align:center; font-size:300%; font-family:Georgia, 'Times New Roman', Times, serif;">
+    GEOGRAPHIC INFORMATION SYSTEM
+  </header>
+  <br><br>
+  <!--BLOG LIST BEGINS HERE-->
+  <!--All the images used in this section are of 590px x 322px size-->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+      <div class="col">
+        <div class="card h-100 border border-warning border-4">
+          <img src="https://s3.envato.com/files/a1915168-27fc-4b0e-9b1e-9ab7c99f5593/inline_image_preview.jpg"
+            class="card-img-top blog_image" alt="France and Europe">
+          <div class="card-body">
+            <h5 class="card-title">NO-GO Areas of France and Rest of the Europe<h6><span
+                  class="badge bg-danger">New</span></h6>
+            </h5>
+            <p class="card-text">
+              The so called "no-go zones" list is a 20 year old list of urban areas drawn up by the French government
+              as a prelude to a series of extremely large urban regeneration plans. The zones are called ....</p>
+          </div>
+          <a href="/sample_blog.html" target="_self" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border border-warning border-4">
+          <img
+            src="http://appliedsciences.nasa.gov//sites/default/files/styles/homepage_hero/public/2021-02/Carbon_Header_v2.png?h=3a51b6cd&itok=9ZVI2DHW"
+            class="card-img-top blog_image" alt="Remote Sensing">
+          <div class="card-body">
+            <h5 class="card-title">Harnessing Remote Sensing For Carbon Offsetting</h5>
+            <p class="card-text">
+              Carbon offsetting has emerged as a pathway to eventually get to net zero carbon emissions. Companies,
+              organisations, countries, and others can plant trees or apply measures that remove carbon from the
+              atmosphere ....
+            </p>
+          </div>
+          <a href="/sample_blog.html" target="_self" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border border-warning border-4">
+          <img
+            src="https://www.researchgate.net/publication/337245925/figure/fig4/AS:825120935387145@1573735569555/Bathymetry-and-Edge-Map-Study-GIS-model-of-the-water-body.png"
+            class="card-img-top blog_image" alt="Mapping Water Bodies">
+          <div class="card-body">
+            <h5 class="card-title">Mapping the Earth’s Freshwater Bodies using GIS</h5>
+            <p class="card-text">
+              Over 95% of the world’s lakes, rivers, and freshwater reservoirs will be measured by a new satellite
+              mission called Surface Water and Ocean Topography (SWOT). Freshwater is so vital for societies yet
+              we actually know little about ....
+            </p>
+          </div>
+          <a href="/sample_blog.html" target="_self" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!--All the images used in this section are of 590px x 322px size-->
+  <div class="container my-4">
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+      <div class="col">
+        <div class="card h-100 border border-warning border-4">
+          <img src="https://www.teahub.io/photos/full/363-3632989_remote-sensing.jpg"
+            class="card-img-top blog_image" alt="France and Europe">
+          <div class="card-body">
+            <h5 class="card-title">NO-GO Areas of France and Rest of the Europe></h6>
+            </h5>
+            <p class="card-text">
+              The so called "no-go zones" list is a 20 year old list of urban areas drawn up by the French government
+              as a prelude to a series of extremely large urban regeneration plans. The zones are called ....</p>
+          </div>
+          <a href="/sample_blog.html" target="_self" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card h-100 border border-warning border-4">
+          <img
+            src="https://i.pinimg.com/736x/50/c8/df/50c8dfdac623923f3aa30107bc376939.jpg"
+            class="card-img-top blog_image" alt="Remote Sensing">
+          <div class="card-body">
+            <h5 class="card-title">Harnessing Remote Sensing For Carbon Offsetting</h5>
+            <p class="card-text">
+              Carbon offsetting has emerged as a pathway to eventually get to net zero carbon emissions. Companies,
+              organisations, countries, and others can plant trees or apply measures that remove carbon from the
+              atmosphere ....
+            </p>
+          </div>
+          <a href="/sample_blog.html" target="_self" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border border-warning border-4">
+          <img
+            src="https://info.geoamps.com/hubfs/real-time-project-mapping-gisamps-banner-2000x1125.jpg"
+            class="card-img-top blog_image" alt="Mapping Water Bodies">
+          <div class="card-body">
+            <h5 class="card-title">History and Significance of World Geographic Information System Day</h5>
+            <p class="card-text">
+              Over 95% of the world’s lakes, rivers, and freshwater reservoirs will be measured by a new satellite
+              mission called Surface Water and Ocean Topography (SWOT). Freshwater is so vital for societies yet
+              we actually know little about ....
+            </p>
+          </div>
+          <a href="/sample_blog.html" target="_self" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--FOOTER BEGINS HERE-->
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="/about.html" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="/contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+      </ul>
+      <section>
+        <a href="mailto:yashmasteruniversal@gmail.com" target="_blank"><img src="images/gmail_icon_black.png"
+            alt="Send email"></a>
+        <a href="https://www.youtube.com/channel/UCXtOvNWUttEBIbbnPhjN9-w" target="_blank"><img
+            src="images/youtube_icon_black.png"></a>
+        <a href="https://www.linkedin.com/in/yash-shah-00816523b/" target="_blank"><img
+            src="images/linkedin_icon_black.png"></a>
+        <a href="https://github.com/YashShah06112002" target="_blank"><img src="images/github_icon_black.png"></a>
+      </section>
+      <br>
+      <p class="text-center text-muted">© 2022 Yash Shah, India</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

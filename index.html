@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cognitive Core - A Hub for Philomaths</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon_logo.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!--Styling starts here-->
+  <style>
+    .correct_image {
+      height: 426px;
+    }
+
+    .blog_image {
+      margin-top: 10px;
+      width: 90%;
+      height: auto;
+      align-self: center;
+    }
+
+    footer section {
+      display: flex;
+      justify-content: center;
+    }
+
+    footer img {
+      margin: 0 15px;
+    }
+  </style>
+
+  <script>
+    function disp() {
+      alert("This feature is currently unavailable!!");
+    }
+  </script>
+</head>
+
+<body>
+  <!--Navigation Bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html"><img src="/images/site_logo.jpg" height="95px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/gis.html">GIS</a></li>
+              <li><a class="dropdown-item" href="/tech.html">Technology</a></li>
+              <li><a class="dropdown-item" href="/mystery.html">Mystery</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li onclick="disp()"><a class="dropdown-item">Write a blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Navigation Bar Ends Here-->
+
+  <!--Home Page Banner-->
+  <div class="container-fluid" style="background-color:rgb(0, 0, 0)">
+    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="https://cdn.wallpapersafari.com/66/38/uBFP0C.jpg" class="d-block w-100 correct_image" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Geographic Information System (GIS)</h2>
+            <p><cite>"A map is the greatest of all poems. It's lines and colors show the realisation of great
+                dreams"</cite></p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/000/677/302/non_2x/abstract-technology-banner-background.jpg"
+            class="d-block w-100 correct_image" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Technology</h2>
+            <p><cite>"Maybe we need less real stupidity and more artificial intelligence"</cite></p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/001/797/851/small/mysterious-clouds-fantasy-background-free-video.jpg"
+            class="d-block w-100 correct_image" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Mystery</h2>
+            <p><cite>"Don't become a mere recorder of facts, but try to penetrate the mystery of their origin"</cite>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <br><br>
+  <!--HOME PAGE BANNER ENDS-->
+
+  <!--BLOG CARDS START HERE-->
+  <header style="text-align:center; font-size:300%; font-family:Georgia, 'Times New Roman', Times, serif;">
+    CHECK OUT OUR RECENT BLOGS
+  </header>
+
+  <br>
+
+  <!--All the images used in this section are of 590px x 322px size-->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+      <div class="col">
+        <div class="card h-100 border border-warning border-4">
+          <img src="https://s3.envato.com/files/a1915168-27fc-4b0e-9b1e-9ab7c99f5593/inline_image_preview.jpg"
+            class="card-img-top blog_image" alt="France and Europe">
+          <div class="card-body">
+            <h5 class="card-title">NO-GO Areas of France and Rest of the Europe</h5>
+            <p class="card-text">
+              The so called "no-go zones" list is a 20 year old list of urban areas drawn up by the French government
+              as a prelude to a series of extremely large urban regeneration plans. The zones are called ....</p>
+          </div>
+          <a href="#" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border border-info border-4">
+          <img src="https://www.globalbankingandfinance.com/wp-content/uploads/2021/05/blockchain-innovation.jpg"
+            class="card-img-top blog_image" alt="Blockchain">
+          <div class="card-body">
+            <h5 class="card-title">10 Blockchain Startups to Watch In the Year 2022</h5>
+            <p class="card-text">While many industries have seen a decline in venture capital investment, the blockchain
+              space has continued to enjoy funding.
+              Blockchain startups have found strength in the rise of NFT use cases .... </p>
+          </div>
+          <a href="#" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border border-secondary border-4">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Haunted_fort_of_Bhangarh.jpg/2560px-Haunted_fort_of_Bhangarh.jpg"
+            class="card-img-top blog_image" alt="Bhangarh Fort">
+          <div class="card-body">
+            <h5 class="card-title">What Makes Bhangarh Fort, the Most Haunted Place of India?</h5>
+            <p class="card-text">With an aura that seem to have stepped out of a horror story,
+              Bhangarh Fort has been a topic of hot discussion since times long forgotten. Many people
+              call it dangerous while many others say .... </p>
+          </div>
+          <a href="#" class="btn btn-dark" style="align-self:center; margin-bottom: 16px;">Continue Reading</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <div class="p-3 mb-2 bg-dark bg-gradient text-white" style="text-align:center">
+    <p style="font-family:cursive; font-size: 300%;">
+      MEET OUR WRITERS
+    </p>
+    <br>
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle"
+          src="https://mymodernmet.com/wp/wp-content/uploads/2019/09/100k-ai-faces-5.jpg" width="140" height="140">
+        <h2 class="fw-normal">Ariana Carole</h2>
+        <i>Professor at University of Toronto (UoT)</i><br><br>
+        <div class="btn btn-sm btn-warning text-white">Blog Writer</div>
+        <div class="btn btn-sm btn-danger text-white">Proofreading</div>
+        <div class="btn btn-sm btn-success text-white">Activist</div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle"
+          src="https://molbio.mgh.harvard.edu/kingstonweb/images/BobKingston.jpg" width="140" height="140">
+        <h2 class="fw-normal">Maddie Wilkerson</h2>
+        <i>Professor of Genetics, Harvard Medical School</i><br><br>
+        <div class="btn btn-sm btn-warning text-white">Blog Writer</div>
+        <div class="btn btn-sm btn-info text-white">Analyst</div>
+        <div class="btn btn-sm btn-success text-white">Activist</div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle"
+          src="https://gray-wafb-prod.cdn.arcpublishing.com/resizer/P858ZQzMvNboR-6J7TMgz0E43ak=/980x0/smart/filters:quality(85)/s3.amazonaws.com/arc-authors/raycom/664034d9-40e6-4441-83d2-b6afdc3c4158.png"
+          width="140" height="140">
+        <h2 class="fw-normal">Travis Traynor</h2>
+        <i>Professor of Genetics, Harvard Medical School</i><br><br>
+        <div class="btn btn-sm btn-danger text-white">Proofreading</div>
+        <div class="btn btn-sm btn-info text-white">Analyst</div>
+        <div class="btn btn-sm btn-success text-white">Activist</div>
+      </div><!-- /.col-lg-4 -->
+    </div>
+    <br>
+  </div>
+
+
+  <!--FOOTER BEGINS HERE-->
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="/about.html" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="/contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+      </ul>
+      <section>
+      <a href="mailto:yashmasteruniversal@gmail.com" target="_blank"><img src="images/gmail_icon_black.png"
+          alt="Send email"></a>
+      <a href="https://www.youtube.com/channel/UCXtOvNWUttEBIbbnPhjN9-w" target="_blank"><img
+          src="images/youtube_icon_black.png"></a>
+      <a href="https://www.linkedin.com/in/yash-shah-00816523b/" target="_blank"><img
+          src="images/linkedin_icon_black.png"></a>
+      <a href="https://github.com/YashShah06112002" target="_blank"><img src="images/github_icon_black.png"></a>
+      </section>
+      <br>
+      <p class="text-center text-muted">© 2022 Yash Shah, India</p>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
